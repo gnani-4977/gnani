@@ -1,0 +1,16 @@
+arr=[1,2,3,4,5,6,7,8,9]
+n=len(arr)
+k=7
+
+def linear(arr,n,k):
+    for i in range(0,n):
+        if arr[i]==k:
+            return i
+    return -1
+    
+result=  linear(arr,n,k)
+
+if result==-1:
+    print("no")
+else:
+    print(result)
