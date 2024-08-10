@@ -1,0 +1,14 @@
+data = [6,5,4,3,2,1]
+
+def selsort(array):
+    for i in range(len(array)):
+        minind=i
+        for j in range(i+1,len(array)):
+            if array[j] < array[minind]:
+                minind=j
+                
+        array[i],array[minind]=array[minind],array[i]
+          
+print(data)            
+selsort(data)
+print(data)
