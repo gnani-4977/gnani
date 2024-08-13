@@ -1,0 +1,21 @@
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+def strong(num):
+    sum=0
+    string=str(num)
+    for i in string:
+        n=int(i)
+        sum+=factorial(n)
+    print(sum)  
+    
+    if num==sum:
+        print("yes")
+    else:
+        print("no")
+    
+data=int(input("number:"))
+strong(data)
