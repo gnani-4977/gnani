@@ -1,0 +1,15 @@
+def arm(num):
+    string=str(num)
+    sum=0
+    for i in string:
+        a=int(i)
+        cube=a*a*a
+        sum+=cube
+    print(sum)
+    if num==sum:
+         print("armstrong")
+    else:
+        print("no")
+    
+data=153
+arm(data)
