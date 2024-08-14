@@ -1,0 +1,12 @@
+def auto(num):
+    num_string=str(num)
+    square=num*num
+    string=str(square)
+    return string.endswith(num_string)
+
+    
+data=int(input("enter a number:"))
+if auto(data):
+    print("automorphic")
+else:
+    print("no")
