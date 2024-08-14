@@ -1,0 +1,14 @@
+def hars(num):
+    string=str(num)
+    sum=0
+    for i in string:
+        inte=int(i)
+        sum+=inte
+    return num%sum==0
+     
+        
+data=int(input("enter a number:"))
+if hars(data):
+    print(f"{data} is harsad number")
+else:
+    print("no")
