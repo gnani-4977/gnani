@@ -1,0 +1,14 @@
+def primenum(n):
+    list=[]
+    for i in range(1,n+1):
+        if n%i==0:
+            list.append(i)
+    #print(list)
+    if len(list)>2:
+        print("not prime")
+    else:
+        print("prime")
+        
+            
+data=int(input("enter number:"))
+primenum(data)
