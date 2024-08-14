@@ -1,0 +1,19 @@
+def factor(num):
+    list=[]
+    for j in range(1,num):
+        if num%j==0:
+            list.append(j)
+    #return list        
+    if len(list)<2:
+        return num   
+
+def prime(start,end):
+    for i in range(start,end):
+        if factor(i):
+            print(i,end=" ") 
+        
+    
+            
+start=int(input("starting:"))
+end=int(input("ending:"))
+prime(start,end)
