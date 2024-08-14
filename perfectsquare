@@ -1,0 +1,12 @@
+def square(num):
+    su=1
+    for i in range(0,num):
+        su=i*i
+        if num==su:
+            return i
+    
+data=int(input("enter number to find if it is a perfectsquae:"))
+if square(data):
+    print("perfectsquare")
+else:
+    print("not")
