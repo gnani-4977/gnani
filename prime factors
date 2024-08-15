@@ -1,0 +1,8 @@
+def primefact(num):
+    list=[2,3,5,7,11,13,17,19]
+    for i in list:
+        if num%i==0:
+            print(i,end=" ")
+num=int(input("enter:"))
+primefact(num)
+print(f"are prime factors of {num}")
