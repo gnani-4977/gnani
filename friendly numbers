@@ -1,0 +1,21 @@
+def friendly(a,b):
+    list0=[]
+    list1=[]
+    for i in range(1,a+1):
+        if a%i==0:
+            list0.append(i)
+    x=sum(list0)/a
+            
+    for j in range(1,b+1):
+        if b%j==0:
+            list1.append(j) 
+    y=sum(list1)/b
+            
+    if x==y:
+        print(f"{a} and {b} are friendly numbers")
+    else:
+        print("no")
+
+one=int(input("enter number:")) 
+two=int(input("enter another:"))
+friendly(one,two) 
