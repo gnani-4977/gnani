@@ -1,0 +1,14 @@
+def sumof(n):
+    list=[]
+    sum=0
+    for i in range(0,n):
+        a=int(input())
+        list.append(a)
+    print(list)
+    
+    for j in list:
+        sum+=j
+    print(sum)    
+    
+n=int(input())
+sumof(n)
