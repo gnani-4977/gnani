@@ -1,0 +1,13 @@
+def chcf(a,b):
+    if a<b:
+        small=a
+    else:
+        small=b
+    for i in range(1,small+1):
+        if a%i==0 and b%i==0:
+            hcf=i
+    return hcf
+    
+x=int(input("num1:"))
+y=int(input("num2:"))
+print(f"HCF of {x} and {y} is:",chcf(x,y)) 
