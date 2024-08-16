@@ -1,0 +1,10 @@
+def large(n):
+    list=[]
+    for i in range(0,n):
+        a=int(input())
+        list.append(a)
+    print(list)
+    print("largest num:",max(list))
+    
+num=int(input("size:"))
+large(num)
