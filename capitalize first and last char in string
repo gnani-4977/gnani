@@ -1,0 +1,5 @@
+def fir_and_last(string):
+    print(string[0].capitalize()+string[1:-1]+string[-1].capitalize())
+
+x="gnani"
+fir_and_last(x)
