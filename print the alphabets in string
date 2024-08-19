@@ -1,0 +1,4 @@
+string="ash12ASH3"
+for i in string:
+    if i>='a' and i<='z' or i>='A' and i<='Z' :
+        print(i)
