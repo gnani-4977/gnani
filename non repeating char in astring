@@ -1,0 +1,9 @@
+def repeat(string):
+    count=[]
+    for i in string:
+        a=string.count(i)
+        if a==1:
+            count.append(a)
+            print(i) 
+x="gnaneshwar"
+repeat(x)
