@@ -1,0 +1,13 @@
+class stack:
+    def __init__(self):
+        self.values=[]
+    def push(self,x):
+        self.values=[x]+self.values
+    def pop(self):
+        return self.values.pop(0)
+a=stack()
+a.push(10)
+a.push(20)
+print(a.values)
+a.pop()
+print(a.values)
