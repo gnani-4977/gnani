@@ -1,0 +1,7 @@
+def cou(s,b):
+    count=0
+    for i in s:
+        if b==i:
+            count+=1
+    print(count)        
+cou("gnani","n")    
