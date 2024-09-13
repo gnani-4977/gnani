@@ -1,0 +1,6 @@
+s="abckh.b.cccc"
+a=s.split(".")
+list=[]
+for i in a:
+    list.append(len(i))
+print(max(list))   
