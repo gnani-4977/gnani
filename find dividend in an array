@@ -1,0 +1,10 @@
+def find_dividend(A, D, Q, R):  
+    for i in range(len(A)):  
+        dividend = D * Q + R  
+        if A[i] == dividend:  
+            return i  
+    return -1  
+    
+arr=[1,2]
+print(find_dividend(arr,3,6,2))
+        
