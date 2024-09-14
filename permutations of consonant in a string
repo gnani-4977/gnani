@@ -1,0 +1,18 @@
+def fact(length):
+    if length==1 or length==0:
+        return 1 
+    else:
+        return length*fact(length-1)
+
+def perm(s):
+    count=0
+    vowels=['a','e','i','o','u']
+    for i in s:
+        if i in vowels:
+            count+=1
+    length=len(s)-count
+    return fact(length)
+    
+str="abcdefi"    
+a=perm(str)   
+print(a) 
