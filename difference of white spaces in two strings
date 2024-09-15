@@ -7,7 +7,7 @@ def white(s1,s2):
     for j in s2:
         if j==" ":
             count1+=1
-    sum=count-count1
+    sum=abs(count-count1)
     if sum%2==0:
         return f"even {sum}"
     else:
