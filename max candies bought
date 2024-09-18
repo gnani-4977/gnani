@@ -1,0 +1,13 @@
+n=int(input())
+arr=list(map(int,input().split()))
+money=int(input())
+count=0
+arr.sort()
+for i in arr:
+    if i%5==0:
+        count+=1
+    else:
+        if i<=money:
+            money-=i
+            count=count+1
+print(count)            
