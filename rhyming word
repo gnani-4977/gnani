@@ -1,0 +1,21 @@
+s="cave"
+d=["gave","give","dine"]
+size=len(d)
+res="no word"
+maxv=0
+t=s[::-1]
+for i in d:
+    if i!=s:
+        cur=0
+        sa=i[::-1]
+        j=0
+        while j<min(len(sa),len(t)):
+            if sa[j]==t[j]:
+                cur+=1
+            else:
+                break
+            j+=1
+        if cur>maxv:
+            maxv=cur
+            res=i
+print(res)
