@@ -1,0 +1,8 @@
+input1=10
+c=0
+for i in range(0,input1+1):
+    temp=list(map(int,bin(i)[2:]))
+    s=sum(temp)+len(temp)
+    if s%2!=0:
+        c+=1
+print(c)  
