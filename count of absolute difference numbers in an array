@@ -1,0 +1,11 @@
+def find(arr,leng,num,diff):
+    count=0
+    for i in arr:
+        if abs(num-i) <= diff:
+            count+=1
+    return count 
+    if count==0:
+        return 0
+    
+arr=[10,11,12,13,14,15,16,1,7]
+print(find(arr,6,13,2))
