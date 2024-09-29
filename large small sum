@@ -1,0 +1,19 @@
+def LS(arr,n):
+    if n<4:
+        return 0
+        
+    list=[]
+    list1=[]
+    for i in range(n):
+        if i%2==0:
+            list.append(arr[i])
+        else:
+            list1.append(arr[i])
+    list.sort()
+    list1.sort()
+    return list[-2]+list1[1]
+        
+    
+ 
+arr=[1,8,0,3,4,5]    
+print(LS(arr,6)) 
