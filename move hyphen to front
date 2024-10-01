@@ -1,0 +1,11 @@
+def hy(string,n):
+    count=0
+    for i in string:
+        if i=='-':
+            count+=1
+    return count*'-'+string.replace('-',"")        
+            
+            
+            
+    
+print(hy("Str-ing-Com-pare",14)) 
