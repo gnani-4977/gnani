@@ -1,0 +1,11 @@
+def replace(string,n,c1,c2):
+    if len(string)==0:
+        return 'null'
+        
+    for i in string:
+        if i==c1:
+            result=string.replace(c1,'*').replace(c2,c1).replace('*',c2)
+            return result
+            
+    
+print(replace("apple",5,'a','p'))   
