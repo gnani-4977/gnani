@@ -1,0 +1,15 @@
+size=int(input("size:"))
+l1=[]
+l2=[]
+for i in range(size):
+    n=int(input(f"ele at {i} is:"))
+    if i%2==0:
+        l1.append(n)
+    else:
+        l2.append(n)
+        
+print("sorted even:",sorted(l1))        
+if max(l1)<max(l2):
+    print(max(l1))
+else:
+    print(max(l2))
